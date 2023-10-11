@@ -1,0 +1,51 @@
+.contact-container {
+    background-image: linear-gradient(125deg, #A14D70 -8.2%, #50458A 130.28%), url(${Phone});
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactForm {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactForm input,
+.contactForm textarea,
+.contactForm button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contactForm button {
+    background-color: #50458A;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.contactForm button:hover {
+    background-color: #A14D70;
+}

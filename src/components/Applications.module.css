@@ -1,0 +1,106 @@
+.applications {
+    padding: 50px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f8fc;
+}
+
+.mainTitle {
+    font-size: 40px;
+    color:black; 
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    font-size: 40px;
+
+}
+
+.subtext {
+    font-size: 20px; 
+    color: black;
+    text-align: left;
+    margin-bottom: 40px;
+    font-weight: 600;
+   
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 380px;
+    height: 280px;
+    padding: 20px;
+    border: none; /* Removed border to better display gradient */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(106, 58, 171, 0.2); /* Adjusted shadow color to match gradient */
+    background: linear-gradient(45deg, #403384, #7054A7);
+    transition: background 0.4s, transform 0.3s, box-shadow 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+
+    /* Additional transition for a hover effect */
+    &:hover {
+        background: linear-gradient(65deg, #372b7f, #8c6fc8);  /* Slightly adjusted gradient */
+        transform: scale(1.05);  /* Slightly enlarges the card */
+        box-shadow: 0px 5px 25px rgba(106, 58, 171, 0.3);  /* Increased shadow for hover effect */
+    }
+}
+
+
+.card:last-child {
+    margin-right: 0;
+}
+
+
+
+.icon {
+    margin-top: 4px;
+
+    /* Removed margin-bottom */
+}
+
+.cardContent {
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Ensure a fallback is provided */
+    font-weight: 600;
+    line-height: 1.5; /* Spacing between lines for better readability */
+    letter-spacing: 0.5px; /* Slight spacing between letters for a refined look */
+    margin-top: 10px; /* Give it some space from the icon above */
+    margin-bottom: 20px; /* Space before the "Learn More" section */
+    max-width: 95%; /* Prevent the content from touching the card's edges */
+}
+
+
+.learnMore {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+
+.learnMore svg {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    fill: white;
+}
+
+.learnMore:hover svg {
+    transform: translateX(5px);
+}

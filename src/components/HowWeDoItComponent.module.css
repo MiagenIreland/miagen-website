@@ -1,0 +1,108 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 50px 20px;
+    background: #f6f6f6; /* Just an example background */
+    
+height: 550px;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    color: #070908; /* Adjust as needed */
+
+}
+
+.cards {
+    display: flex;
+    gap: 20px; /* Adjust the gap between cards */
+    width: 100%;
+    justify-content: center;
+}
+
+.card {
+    flex: 1; /* This will ensure all cards have equal width */
+    padding: 20px;
+    background: white; /* Base card color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle card shadow */
+    border-radius: 10px;
+    text-align: center;
+    border-radius: 10px;
+background: #070908;
+color: #E0E0E0;
+font-family: 'Montserrat';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+min-height: 50vh;
+
+}
+
+.card1 {
+    flex: 1; 
+    padding: 20px;
+    background: #070908; 
+    color: #E0E0E0;
+    font-family: 'Montserrat';
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; 
+    height: 55vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;  /* This will vertically center the content */
+    justify-content: center;  /* This will horizontally center the content */
+}
+
+
+.cardTitle {
+    color: #FFF;
+font-family: 'Montserrat';
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: 26px; /* 130% */
+margin-bottom: 45px;
+}
+
+.invertedColor {
+    filter: invert(100%);
+}
+
+.howWeDoButton {
+
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* Aligns the button to the start (left) of its container */
+    display: inline-block; 
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 40px;
+padding: 15px 30px;
+border: none;
+border-radius: 30px;
+background: #9a94f0;
+color: #1b153a;
+font-family: 'Montserrat';
+font-size: 19px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    
+    &:hover {
+        background-color: #7054A7;
+    }
+}
